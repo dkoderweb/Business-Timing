@@ -15,9 +15,7 @@ use App\Http\Controllers\BranchController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[BranchController::class,'index']);
 
 
 
