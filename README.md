@@ -74,7 +74,7 @@ The Business Timing Application is a comprehensive web-based tool designed to st
     cp .env.example .env
     ```
 
-5. **Run the migrations:**
+5. **Run the migrations:(Or you can use business.sql)**
 
     ```bash
     php artisan migrate
