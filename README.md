@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Business Timing Application is a web-based tool designed to help you manage and display the operating hours, special closures, and images for different branches of your businesses. This application provides a user-friendly interface for creating, editing, and viewing the details of businesses and their branches.
+The Business Timing Application is a comprehensive web-based tool designed to streamline the management and display of operating hours, special closures, and images for different branches of your businesses. This application offers a user-friendly interface for creating, editing, and viewing the details of businesses and their branches.
 
 ## Table of Contents
 
@@ -22,56 +22,77 @@ The Business Timing Application is a web-based tool designed to help you manage 
 
 ## Features
 
-- Create and manage businesses.
-- Add branches to businesses with operating hours for each day of the week.
-- Specify multiple operating timings for a single day.
-- Mark specific days as closed.
-- Add special closure dates for branches.
-- Attach multiple images to each branch.
-- View detailed information about each branch, including its status (open or closed).
-- Edit and delete branches easily.
+- **Business Management:**
+  - Create and manage businesses with essential details.
+  - Upload a logo for a professional appearance.
+
+- **Branch Management:**
+  - Add branches to businesses with customizable operating hours for each day of the week.
+  - Specify multiple operating timings for a single day to accommodate various schedules.
+
+- **Day-specific Closures:**
+  - Mark specific days as closed for individual branches.
+  - Easily manage and visualize the days when a branch is closed.
+
+- **Special Closure Dates:**
+  - Set special closure dates for branches to accommodate holidays or unique events.
+
+- **Image Attachments:**
+  - Attach multiple images to each branch to enhance the visual representation.
+
+- **Detailed Information:**
+  - View comprehensive details about each branch, including its business association, name, and status (open or closed).
+
+- **Edit and Delete Functionality:**
+  - Modify branch details or delete branches effortlessly as per your requirements.
 
 ## Getting Started
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/dkoderweb/Business-Timing.git
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
 
     ```bash
     cd Business-Timing
     ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 
     ```bash
     composer update
     ```
 
-4. Create a copy of the environment file:
+4. **Create a copy of the environment file:**
 
     ```bash
     cp .env.example .env
     ```
 
-5. Generate an application key:
+5. **Run the migrations:**
+
+    ```bash
+    php artisan migrate
+    ```
+
+6. **Generate an application key:**
 
     ```bash
     php artisan key:generate
     ```
 
-6. Create a symbolic link for the storage directory:
+7. **Create a symbolic link for the storage directory:**
 
     ```bash
     php artisan storage:link
     ```
 
-7. Run the development server:
+8. **Run the development server:**
 
     ```bash
     php artisan serve
@@ -86,8 +107,8 @@ Access the application in your web browser at [http://localhost:8000](http://loc
 ### Creating a Business
 
 1. Navigate to the business creation page.
-2. Fill in the business details, such as name, email, and phone number.
-3. Upload a logo for the business.
+2. Fill in the business details, including the name, email, phone number, and upload a logo.
+3. Submit the form to create the business.
 
 ### Adding a Branch
 
@@ -95,6 +116,7 @@ Access the application in your web browser at [http://localhost:8000](http://loc
 2. Create a new branch for the selected business.
 3. Specify the branch name, operating hours for each day of the week, and any special closure dates.
 4. Attach multiple images to the branch.
+5. Submit the form to add the branch.
 
 ### Viewing Branch Details
 
